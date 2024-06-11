@@ -1,11 +1,34 @@
 # Terraform
 
-## Data types in terraform
-1.String ex-"example","ubuntu","centos"
-2.Number 123456789
-3.Bool True,False 0,1
-4List [ "red" , "yellow" , "green" , "]
 
+## Terraform run on HCl language 
+providers
+official -aws,azure,gcp
+partner -alibaba
+community -others
+
+## Data types in terraform
+1.String = ex-"example","ubuntu","centos"
+2.Number = 123456789
+3.Bool = True,False 0,1
+4.List = [ "red" , "yellow" , "green" , "]
+5.map = 
+
+## Installation terraform
+sudo yum install -y yum-utils shadow-utils
+sudo yum-config-manager --add-repo https://rpm.releases.hashicorp.com/AmazonLinux/hashicorp.repo
+sudo yum -y install terraform
+
+or
+download binary pkg
+https://releases.hashicorp.com/terraform/1.8.5/terraform_1.8.5_linux_amd64.zip
+
+unzip pkg
+move file on exicutable location
+mv terraform /bin/tf
+terraform --version (to check)
+
+## create script file.tf
 
 provider "aws" {
     region = "ap-northeast-1"
