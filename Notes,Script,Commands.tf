@@ -81,3 +81,4 @@ resource "aws_iam_user" "demo2" {
 enetr value -yes
 
 5) tf apply -auto-approve (after script skip all commands we can also use)
+6)
