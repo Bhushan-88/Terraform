@@ -52,6 +52,22 @@ resource "aws_iam_user" "demo" {
     name = "user1"
 }
 
+# anathor way to configure
+aws configure --profile devops.tf
+enter access key and secret key
+region us-east-1
+formate -json
+
+vim terra_script.tf
+provider "aws" {
+    region = "ap-northeast-1"
+    profile = "devops.tf
+}
+
+resource "aws_iam_user" "demo2" {
+    name = "user2"
+}
+
 # commands to run after script
 terraform init
 terraform plan (run command)
@@ -81,4 +97,5 @@ resource "aws_iam_user" "demo2" {
 enetr value -yes
 
 5) tf apply -auto-approve (after script skip all commands we can also use)
+6)
 
