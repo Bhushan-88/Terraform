@@ -28,6 +28,11 @@ move file on exicutable location
 mv terraform /bin/tf
 terraform --version (to check)
 
+## aws configure
+enter access key and secret key
+region -
+format-json 
+
 ## create script file.tf
 
 provider "aws" {

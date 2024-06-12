@@ -1,6 +1,13 @@
 # Terraform
 
+Terraform Lyfecycle :
+init >> plan >> apply >> destroy
 
+terraform suports Hcl and ajson
+                  .tf   and .tf.json
+
+## Installation terraform
+sudo yum install -y yum-utils shadow-utils
 ## Terraform run on HCl language 
 providers
 official -aws,azure,gcp
