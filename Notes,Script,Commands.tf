@@ -82,3 +82,4 @@ enetr value -yes
 
 5) tf apply -auto-approve (after script skip all commands we can also use)
 6)
+7)
