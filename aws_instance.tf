@@ -10,7 +10,7 @@ resource "aws_instance" "terraform" {
     tags = {
         env = "dev"
     }
-  vpc_security_group_ids = "sg-0f15633e954b0ce93"
+  vpc_security_group_ids = "sg-0f15633e954b0ce93,sg-0ef81a7f2d971af18"
 }
 variable "region" {
     
