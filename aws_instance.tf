@@ -12,7 +12,6 @@ resource "aws_instance" "terraform" {
     }
   vpc_security_group_ids = "sg-0c8782daf72c3f29d"
 }
-variable "plz enter region" {
+variable "region" {
 
-  
 }
