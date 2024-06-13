@@ -80,4 +80,6 @@ resource "aws_iam_user" "demo2" {
 2) terraform plan
 3) terraform apply
 4) enetr value -yes
-5)tf apply -auto-approve (after script skip all commands we can also use)
+5)tf apply -auto-approve (after script skip all commands)
+6)tf plan --var instance_type=t3.micro 
+7)tf apply -var instance_type=t3.micro
