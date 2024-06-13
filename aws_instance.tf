@@ -1,16 +1,16 @@
 provider "aws" {
-    region = var.aws_region
+    region = var.region
   
 }
 
 resource "aws_instance" "terraform" {
-    ami = "ami-067deadd431782242"
+    ami = "ami-08a0d1e16fc3f61ea"
     instance_type = "t2.micre"
-    key_name = "central"
+    key_name = "virginia"
     tags = {
         env = "dev"
     }
-  vpc_security_group_ids = "sg-0c8782daf72c3f29d"
+  vpc_security_group_ids = "sg-0f15633e954b0ce93"
 }
 variable "region" {
     
