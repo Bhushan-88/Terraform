@@ -13,5 +13,6 @@ resource "aws_instance" "terraform" {
   vpc_security_group_ids = "sg-0c8782daf72c3f29d"
 }
 variable "region" {
+    default = "ap-northeast-1"
 
 }
