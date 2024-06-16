@@ -1,10 +1,10 @@
 # Create Terraform Script
-Create a script.tf file with the following content. 
-This script will define the necessary variables and AWS provider, 
-and it will create an EC2 instance:
+#Create a script.tf file with the following content. 
+#>This script will define the necessary variables and AWS provider, 
+#>and it will create an EC2 instance:
 
 # script.tf
-
+/*
 # Define the provider
 provider "aws" {
   region = var.aws_region
@@ -45,3 +45,4 @@ resource "aws_instance" "example" {
     Name = "Terraform-Example"
   }
 }
+/*
