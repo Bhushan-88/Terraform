@@ -3,10 +3,10 @@ provider "aws" {
 }
 
 resource "aws_iam_user" "admin_user" {
-  name = "admin-user"
+  name = "admin-user2"
   tags = {
-    "TagKey1" = "TagValue1"
-    "TagKey2" = "TagValue2"
+    "TagKey1" = "TagValue3"
+    "TagKey2" = "TagValue4"
   }
 }
 
