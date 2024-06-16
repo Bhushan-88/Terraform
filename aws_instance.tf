@@ -14,4 +14,5 @@ resource "aws_instance" "instance-1" {
 }
 
 variable "region" {
+  description = "please enter a region"
 }
