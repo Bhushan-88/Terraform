@@ -4,13 +4,13 @@ provider "aws" {
 }
 
 resource "aws_instance" "terraform" {
-    ami = "ami-08a0d1e16fc3f61ea"
+    ami = "ami-033fabdd332044f06"
     instance_type = "t2.micro"
-    key_name = "virginia"
+    key_name = "ohio"
     tags = {
         env = "dev"
     }
-  vpc_security_group_ids = "vpc-06483d93db18b413d"
+  vpc_security_group_ids = "vpc-00a98d3275ef28193 "
 }
 variable "region" {
     
