@@ -19,8 +19,8 @@ resource "aws_instance" "example" {
 
 # Create a security group
 resource "aws_security_group" "my-security-group" {
-  name        = "sg-054e743f8fcca7143"
-  description = "sg-054e743f8fcca7143"
+  name        = "mysecugrp"
+  description = "mygrp"
 
   ingress {
     from_port   = 22
