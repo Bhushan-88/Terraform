@@ -1,5 +1,5 @@
 provider "aws" {
-    region = ""
+    region = var.region
 }
 resource "aws_instance" "instance-1" {
   ami = "ami-033fabdd332044f06"
