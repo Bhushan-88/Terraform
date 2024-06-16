@@ -5,7 +5,7 @@ provider "aws" {
 resource "aws_iam_user" "admin_user" {
   name = "admin-user2"
   tags = {
-    "TagKey1" = "TagValue3"
+    "TagKey1" = "1st"
     "TagKey2" = "TagValue4"
   }
 }
