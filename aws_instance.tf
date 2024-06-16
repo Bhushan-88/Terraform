@@ -1,7 +1,6 @@
-provider "aws"{
+provider "aws" {
     region = "us-east-2"
 }
-
 resource "aws_instance" "instance-1" {
   ami = "ami-033fabdd332044f06"
   instance_type = "t2.micro"
@@ -12,5 +11,3 @@ resource "aws_instance" "instance-1" {
     name ="my-ins"
   }
 }
-
-
