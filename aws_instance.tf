@@ -1,5 +1,5 @@
 provider "aws" {
-    region = var.region
+    region = "us-east-2"
 }
 resource "aws_instance" "instance-1" {
   ami = "ami-033fabdd332044f06"
@@ -10,11 +10,4 @@ resource "aws_instance" "instance-1" {
     dev = "dev"
     name ="my-ins"
   }
-  security_groups = ["sg-08b442c8b6b7db597", "sg-054e743f8fcca7143"]
-  
-
-}
-
-variable "region" {
-  description = "please enter a region"
 }
