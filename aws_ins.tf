@@ -16,6 +16,6 @@ variable "region" {
   default = "us-east-1"
 }
 variable "instance_type" {
-    description = "t2.micro"
+    description = "plz enter ins type"
   
 }
