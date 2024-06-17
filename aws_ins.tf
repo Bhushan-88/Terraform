@@ -34,5 +34,6 @@ output "demo" {
     value = "completed"
 }
 output "public_ip" {
-    value = aws_instance.instance.my-instance.public_ip
+    value = aws_instance.my-instance.public_ip
+  
 }
