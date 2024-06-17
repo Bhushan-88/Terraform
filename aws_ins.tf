@@ -2,10 +2,10 @@ provider "aws" {
     region = var.region
     }
 resource "aws_instance" "instance" {
-    ami = "ami-033fabdd332044f06"
+    ami = "ami-08a0d1e16fc3f61ea"
     instance_type = "t2.micro"
-    key_name = "ohio"
-    vpc_security_group_ids = ["sg-054e743f8fcca7143"]
+    key_name = "virginia"
+    vpc_security_group_ids = ["sg-0bf319c976511b0e0"]
     tags = {
         env = "dev"
         name = "ins-1"
