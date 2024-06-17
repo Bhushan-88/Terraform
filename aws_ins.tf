@@ -1,6 +1,5 @@
 provider "aws" {
     region = var.region
-  
 }
 resource "aws_instance" "instance" {
     ami = "ami-033fabdd332044f06"
@@ -12,7 +11,6 @@ resource "aws_instance" "instance" {
         name = "ins-1"
     }
 }
-    variable "region" {
-        description = "enter rgion name"
-      
-    }
+variable "region" {
+ dedescription = "enter a region" 
+}
