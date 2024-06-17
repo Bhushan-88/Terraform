@@ -11,7 +11,7 @@ provider "aws" {
     region = var.region
     }
 #Resources name
-resource "aws_instance" "instance" {
+resource "aws_instance" "my-instance" {
     ami = "ami-08a0d1e16fc3f61ea"
     instance_type = var.instance_type
     key_name = "virginia"
@@ -32,4 +32,7 @@ variable "instance_type" {
 #output for print only
 output "demo" { 
     value = "completed"
+}
+output "public_ip" {
+    value = aws_instance.instance.my-instance.public_ip
 }
