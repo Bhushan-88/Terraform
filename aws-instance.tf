@@ -3,7 +3,7 @@ provider "aws" {
   
 }
 
-resource "aws_instance" "instance-1" {
+resource "aws_instance" "instance-01" {
     instance_type = var.instance_type
     key_name = "ohio"
     vpc_security_group_ids = ["sg-054e743f8fcca7143"]
