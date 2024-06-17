@@ -51,6 +51,8 @@ terraform plan (run command)
 tf validate (to verify changes is valid)
 terraform apply
 enter value -yes
+tf destroy
+tf plan --var region=ap-southeast-1 (replace region in sript)
 
 # anathor way to configure
 aws configure --profile devops.tf
@@ -59,6 +61,7 @@ region us-east-1
 formate -json
 
 vim terra_script.tf
+
 provider "aws" {
     region = "ap-northeast-1"
     profile = "devops.tf
@@ -70,7 +73,7 @@ resource "aws_iam_user" "demo2" {
 
 1) command - terrafrom init
 2) terraform plan
-2) terraform apply
+3) terraform apply
 enetr value -yes
 
 5) tf apply -auto-approve (after script skip all commands we can also use)
