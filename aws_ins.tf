@@ -1,6 +1,16 @@
+#to save terraform.tfstate file
+terraform {
+  backend "s3" {
+    bucket = "buc-ohio"
+    region = "us-east-2"
+    key = "terraform.tfstate"
+  }
+}
+#provider block
 provider "aws" {
     region = var.region
     }
+#Resources name
 resource "aws_instance" "instance" {
     ami = "ami-08a0d1e16fc3f61ea"
     instance_type = var.instance_type
