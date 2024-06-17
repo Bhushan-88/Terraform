@@ -13,5 +13,5 @@ resource "aws_instance" "instance-1" {
 }
 variable "region" {
   description = "enter region name"
-
+  default = "us-east-2"
 }
