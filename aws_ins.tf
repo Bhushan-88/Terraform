@@ -1,4 +1,4 @@
-#to save terraform.tfstate file
+#to save terraform.tfstate file (note enable bucket versioning)
 terraform {
   backend "s3" {
     bucket = "buc-ohio"
