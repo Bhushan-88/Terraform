@@ -52,7 +52,8 @@ tf validate (to verify changes is valid)
 terraform apply
 enter value -yes
 tf destroy
-tf plan --var region=ap-southeast-1 (replace region in sript)
+tf paln --var instance_type=t3.medium (replace instance type in sript)
+tf apply --var instance_type=t3.medium
 
 # anathor way to configure
 aws configure --profile devops.tf
