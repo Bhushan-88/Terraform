@@ -10,5 +10,9 @@ resource "aws_instance" "instance-1" {
       env = "dev"
       name ="instance-1"
     }
-  
+    vpc_security_group_ids = "sg-054e743f8fcca7143"
+}
+variable "region" {
+  description = "enter region name"
+  default = "us-east-2"
 }
