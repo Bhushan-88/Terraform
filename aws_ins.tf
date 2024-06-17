@@ -25,7 +25,7 @@ variable "region" {
   description = "please enter a region"
   default = "us-east-1"
 }
-variable "instance_type" {
+variable "instance_type" { 
     description = "plz enter ins type"
   
 }
