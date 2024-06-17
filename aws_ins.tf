@@ -29,3 +29,7 @@ variable "instance_type" {
     description = "plz enter ins type"
   
 }
+#output for print only
+output "demo" { 
+    value = "completed"
+}
