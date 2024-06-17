@@ -17,5 +17,6 @@ variable "region" {
 }
 variable "instance_type" {
     description = "enter ins type"
+    default = "t2.micro"
   
 }
