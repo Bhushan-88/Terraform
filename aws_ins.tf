@@ -11,6 +11,7 @@ resource "aws_instance" "instance" {
         env = "dev"
         name = "ins-1"
     }
+}
     variable "region" {
         description = "enter rgion name"
       
