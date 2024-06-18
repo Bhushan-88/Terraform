@@ -1,3 +1,4 @@
+/*
 provider "aws" {
   region = "us-west-2" # Change this to your desired AWS region
 }
@@ -22,5 +23,5 @@ output "user_arn" {
 output "user_name" {
   value = aws_iam_user.admin_user.name
 }
-##
-#
+
+*/
