@@ -37,7 +37,7 @@ output "public_ip" {
     value = aws_instance.my-instance.public_ip
 
 }
-data "aws_security_groups" "my_sg" {
+/*data "aws_security_groups" "my_sg" {
   filter {
     name   = "group-name"
     values = ["default"]
@@ -48,3 +48,4 @@ data "aws_security_groups" "my_sg" {
     values = ["vpc-02f1f0a3c81dc6f9d"]
   }
 }
+/*
