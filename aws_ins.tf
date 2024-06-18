@@ -21,6 +21,7 @@ resource "aws_instance" "my-instance" {
         name = "ins-1"
     }
 }
+#variables
 variable "region" {
   description = "please enter a region"
   default = "us-east-1"
@@ -38,14 +39,14 @@ output "public_ip" {
 
 }
 
-data "aws_security_groups" "my_sg" {
-  filter {
-    name   = "group-name"
-    values = ["default"]
-  }
-
-  filter {
-    name   = "vpc-id"
-    values = ["vpc-02f1f0a3c81dc6f9d"]
-  }
-}
+#data "aws_security_groups" "my_sg" {
+#  filter {
+#    name   = "group-name"
+#    values = ["default"]
+#  }
+#
+#  filter {
+#    name   = "vpc-id"
+#    values = ["vpc-02f1f0a3c81dc6f9d"]
+#  }
+#}
