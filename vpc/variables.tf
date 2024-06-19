@@ -26,6 +26,18 @@ variable "env" {
 variable "pri_sub_cidr" {
     default = "10.10.0.0/20"
 }
+variable "pub_sub_cidr" {
+    default = "10.10.16.0/20"
+}
 variable "project" {
     default = "cbz"
+}
+variable "image_id" {
+    default = "ami-08a0d1e16fc3f61ea"
+}
+variable "instance_type" {
+    default = "t2.micro"
+}
+variable "key_pair" {
+    default = "ohio"
 }
