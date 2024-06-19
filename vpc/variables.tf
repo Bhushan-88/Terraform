@@ -27,7 +27,7 @@ variable "pri_sub_cidr" {
     default = "10.10.0.0/20"
 }
 variable "pub_sub_cidr" {
-    default = "10.10.16.0/20"
+    default = "10.10.32.0/20"
 }
 variable "project" {
     default = "cbz"
@@ -39,5 +39,5 @@ variable "instance_type" {
     default = "t2.micro"
 }
 variable "key_pair" {
-    default = "ohio"
+    default = "virginia"
 }
