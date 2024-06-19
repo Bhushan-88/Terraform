@@ -3,14 +3,14 @@ variable "region" {
 }
 
 variable "az1" {
-    default = "us-east-1"
+    default = "us-east-1a"
 }
 variable "az2" {
-    default = "us-east-1"
+    default = "us-east-1b"
 }
 
-variable "terraform-backend" {
-  default = "buc-ohio"
+variable "terraform_backend" {
+  default = "buc-virginia"
 }
 
 variable "vpc_name" {
