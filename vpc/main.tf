@@ -88,13 +88,17 @@ resource "aws_security_group" "sg1" {
         cidr_block = ["0.0.0.0/0"]
 
     }
+    tags = {
+    Name = "${var.project}-sg"
+    env  = var.env
+  }
   
 }
 
 resource "aws_instance" "instance1" {
   ami = var.image_id
   instance_type = var.instance_type
-  vpc_security_group_ids = [aws_vpc.my-vpc.default_security_group_id, aws_security_group.sg1.id]
+  vpc_security_group_ids = [aws_security_group.sg1.id]
   subnet_id = aws_subnet.pri-subnet.id
   key_name = var.key_pair
   tags = {
@@ -106,13 +110,14 @@ resource "aws_instance" "instance1" {
 resource "aws_instance" "instance2" {
     ami = var.image_id
     instance_type = var.instance_type
-    vpc_security_group_ids = [aws_vpc.my-vpc.default_security_group_id, aws_security_group.sg1.id]
+    vpc_security_group_ids = [aws_security_group.sg1.id]
     subnet_id = aws_subnet.pub-subnet.id
     key_name = var.key_pair
     tags = {
         name = "${var.project}-public-instance"
         env = var.env
     }
+
     user_data = <<EOF
     #!/bin/bash
     yum install httpd -y
