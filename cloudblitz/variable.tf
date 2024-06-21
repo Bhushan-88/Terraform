@@ -17,3 +17,19 @@ variable "private_cidr" {
 variable "public_cidr" {
     default = "10.10.16.0/20"
 }
+
+variable "count" {
+    default = 2
+}
+
+variable "instance_type" {
+    default = "t2.micro"  
+}
+
+variable "key_pair" {
+    default = "virginia"
+}
+
+variable "image_id" {
+  
+}
