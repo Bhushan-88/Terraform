@@ -19,7 +19,7 @@ variable "environment" {
 }
 
 variable "count" {
-    default = 2
+    default = "2"
 }
 variable "image_id" {
     default = "ami-08a0d1e16fc3f61ea"
